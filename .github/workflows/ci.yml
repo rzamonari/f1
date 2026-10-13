@@ -23,14 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Instalar Poetry
         run: pipx install "poetry==${POETRY_VERSION}"
 
       - name: Configurar Python
         id: python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
           cache: "poetry"
@@ -69,14 +69,14 @@ jobs:
     timeout-minutes: 15
     needs: qualidade
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Instalar Poetry
         run: pipx install "poetry==${POETRY_VERSION}"
 
       - name: Configurar Python
         id: python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
           cache: "poetry"
@@ -103,14 +103,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Instalar Poetry
         run: pipx install "poetry==${POETRY_VERSION}"
 
       - name: Configurar Python
         id: python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
           cache: "poetry"
