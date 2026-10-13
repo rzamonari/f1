@@ -4,13 +4,24 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
+
+# Um novo push no mesmo PR ou branch cancela a execução anterior.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 env:
-  POETRY_VERSION: "2.2.1"
+  # Mesma versão que gera o poetry.lock; compatível com requires-poetry.
+  POETRY_VERSION: "2.5.1"
 
 jobs:
   qualidade:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -53,6 +64,7 @@ jobs:
     # DuckDB em arquivo temporário e OpenF1 simulada; o teste contra a API real
     # só roda com F1_TESTES_REDE=1 e fica fora da CI.
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     needs: qualidade
     steps:
       - uses: actions/checkout@v4
