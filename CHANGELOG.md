@@ -15,3 +15,4 @@ Mudanças relevantes por versão, no formato [Keep a Changelog](https://keepacha
 - Dashboard Streamlit (`src/f1/dashboard/app.py`) com as 5 voltas mais rápidas por circuito, lendo do DuckDB.
 - Documentação MkDocs Material, com modo claro/escuro, e atalhos `poetry run task docs` / `task docs-build` (taskipy).
 - CI no GitHub Actions, com deploy da documentação no GitHub Pages a cada push na `main`.
+- Hooks de pre-commit (`.pre-commit-config.yaml`) com Ruff, `poetry check --lock` e verificações básicas de arquivos.

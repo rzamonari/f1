@@ -13,6 +13,15 @@ poetry run mkdocs build --strict
 
 O mesmo conjunto roda na CI (`.github/workflows/ci.yml`), além de `poetry check --lock`.
 
+### Pre-commit
+
+```bash
+poetry run pre-commit install          # uma vez por clone
+poetry run pre-commit run --all-files  # todos os arquivos, sob demanda
+```
+
+A cada commit rodam `ruff check --fix`, `ruff format`, `poetry check --lock` (quando `pyproject.toml` ou `poetry.lock` mudam) e verificações básicas: espaços no fim da linha, quebra de linha final, YAML/TOML válidos, marcadores de conflito, arquivos acima de 1 MB e chaves privadas. O Ruff roda com `poetry run`, na versão do `poetry.lock`. Os hooks adiantam o feedback, mas não substituem a CI. A configuração fica em `.pre-commit-config.yaml`.
+
 ### Documentação
 
 ```bash
@@ -55,3 +64,4 @@ Só com `poetry add` (produção) ou `poetry add --group dev` (desenvolvimento),
 | `ruff` | lint, formatação e imports |
 | `mkdocs`, `mkdocs-material` | documentação |
 | `taskipy` | atalhos `poetry run task <nome>` |
+| `pre-commit` | hooks de lint e formatação antes do commit |
