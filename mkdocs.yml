@@ -1,5 +1,7 @@
 site_name: F1 — Pipeline OpenF1
 site_description: Pipeline de dados históricos de Fórmula 1 a partir da API OpenF1, com carga em DuckDB.
+site_url: https://rzamonari.github.io/f1/
+repo_url: https://github.com/rzamonari/f1
 docs_dir: docs
 
 theme:

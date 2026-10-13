@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, dev]
   workflow_dispatch:
 
 # Um novo push no mesmo PR ou branch cancela a execução anterior.
@@ -57,7 +57,9 @@ jobs:
           --cov-report=term-missing
           --cov-fail-under=50
 
+      # Na main, o build estrito acontece no job "documentacao", junto com o deploy.
       - name: Documentação
+        if: github.event_name == 'pull_request'
         run: poetry run mkdocs build --strict
 
   integracao:
@@ -87,3 +89,42 @@ jobs:
 
       - name: Testes de integração
         run: poetry run pytest tests/integration -m integration
+
+  documentacao:
+    # Publica a documentação no GitHub Pages (branch gh-pages) a cada push na main,
+    # depois que qualidade e integração passaram.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: [qualidade, integracao]
+    concurrency:
+      group: docs-deploy
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Poetry
+        run: pipx install "poetry==${POETRY_VERSION}"
+
+      - name: Configurar Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+          cache: "poetry"
+
+      - name: Selecionar interpretador
+        run: poetry env use "${{ steps.python.outputs.python-path }}"
+
+      - name: Instalar dependências
+        run: poetry install --no-interaction
+
+      - name: Configurar autor dos commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy da documentação
+        run: poetry run mkdocs gh-deploy --strict --force --no-history

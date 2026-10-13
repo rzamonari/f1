@@ -23,6 +23,8 @@ poetry run task --list       # lista os atalhos
 
 Os atalhos ficam em `[tool.taskipy.tasks]` no `pyproject.toml`.
 
+A publicação é feita pela CI: a cada push na `main`, depois dos jobs `qualidade` e `integracao`, o job `documentacao` roda `mkdocs gh-deploy --strict` e atualiza a branch `gh-pages` (https://rzamonari.github.io/f1/). Nos PRs a CI só faz o build estrito. Não rode `gh-deploy` à mão.
+
 ## Convenções
 
 - Nomes do domínio em português (`Sessao`, `Volta`). Termos consagrados da F1 (`stint`, `pit`, `grid`) ficam em inglês.
