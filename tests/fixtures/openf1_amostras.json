@@ -1,0 +1,697 @@
+{
+ "sessions": [
+  {
+   "session_key": 9673,
+   "session_type": "Race",
+   "session_name": "Race",
+   "date_start": "2024-04-21T07:00:00+00:00",
+   "date_end": "2024-04-21T09:00:00+00:00",
+   "meeting_key": 1233,
+   "circuit_key": 49,
+   "circuit_short_name": "Shanghai",
+   "country_key": 53,
+   "country_code": "CHN",
+   "country_name": "China",
+   "location": "Shanghai",
+   "gmt_offset": "08:00:00",
+   "year": 2024,
+   "is_cancelled": false
+  }
+ ],
+ "meetings": [
+  {
+   "meeting_key": 1233,
+   "meeting_name": "Chinese Grand Prix",
+   "meeting_official_name": "FORMULA 1 LENOVO CHINESE GRAND PRIX 2024",
+   "location": "Shanghai",
+   "country_key": 53,
+   "country_code": "CHN",
+   "country_name": "China",
+   "country_flag": "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/china-flag.png",
+   "circuit_key": 49,
+   "circuit_short_name": "Shanghai",
+   "circuit_type": "Permanent",
+   "circuit_info_url": "https://api.multiviewer.app/api/v1/circuits/49/2024",
+   "circuit_image": "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/China%20carbon.png",
+   "gmt_offset": "08:00:00",
+   "date_start": "2024-04-19T03:30:00+00:00",
+   "date_end": "2024-04-21T09:00:00+00:00",
+   "year": 2024,
+   "is_cancelled": false
+  }
+ ],
+ "drivers": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 1,
+   "broadcast_name": "M VERSTAPPEN",
+   "full_name": "Max VERSTAPPEN",
+   "name_acronym": "VER",
+   "team_name": "Red Bull Racing",
+   "team_colour": "3671C6",
+   "first_name": "Max",
+   "last_name": "Verstappen",
+   "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png",
+   "country_code": "NED"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 4,
+   "broadcast_name": "L NORRIS",
+   "full_name": "Lando NORRIS",
+   "name_acronym": "NOR",
+   "team_name": "McLaren",
+   "team_colour": "FF8000",
+   "first_name": "Lando",
+   "last_name": "Norris",
+   "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/1col/image.png",
+   "country_code": "GBR"
+  }
+ ],
+ "laps": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 1,
+   "lap_number": 1,
+   "date_start": "2024-04-21T07:03:36.841000+00:00",
+   "duration_sector_1": 28.965,
+   "duration_sector_2": 29.65,
+   "duration_sector_3": 43.295,
+   "i1_speed": 276,
+   "i2_speed": 268,
+   "is_pit_out_lap": false,
+   "lap_duration": 101.91,
+   "segments_sector_1": [
+    null,
+    2049,
+    2049,
+    2051,
+    2049,
+    2049,
+    2049
+   ],
+   "segments_sector_2": [
+    2051,
+    2049,
+    2051,
+    2051,
+    2051,
+    2051
+   ],
+   "segments_sector_3": [
+    2051,
+    2049,
+    2049,
+    2049,
+    2049,
+    2051,
+    2049,
+    2049,
+    2051
+   ],
+   "st_speed": 304
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 1,
+   "lap_number": 2,
+   "date_start": "2024-04-21T07:05:18.750000+00:00",
+   "duration_sector_1": 26.651,
+   "duration_sector_2": 30.091,
+   "duration_sector_3": 43.361,
+   "i1_speed": 267,
+   "i2_speed": 261,
+   "is_pit_out_lap": false,
+   "lap_duration": 100.103,
+   "segments_sector_1": [
+    2049,
+    2049,
+    2049,
+    2048,
+    2051,
+    2048,
+    2048
+   ],
+   "segments_sector_2": [
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+   ],
+   "segments_sector_3": [
+    2048,
+    2048,
+    2049,
+    2049,
+    2049,
+    2051,
+    2049,
+    2049
+   ],
+   "st_speed": 308
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 1,
+   "lap_number": 3,
+   "date_start": "2024-04-21T07:06:58.955000+00:00",
+   "duration_sector_1": 27.011,
+   "duration_sector_2": 30.19,
+   "duration_sector_3": 43.293,
+   "i1_speed": 269,
+   "i2_speed": 263,
+   "is_pit_out_lap": false,
+   "lap_duration": 100.494,
+   "segments_sector_1": [
+    null,
+    2049,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+   ],
+   "segments_sector_2": [
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+   ],
+   "segments_sector_3": [
+    2048,
+    2048,
+    2049,
+    2049,
+    2049,
+    2048,
+    2048,
+    2048,
+    2049
+   ],
+   "st_speed": 307
+  }
+ ],
+ "laps_quali": [
+  {
+   "meeting_key": 1246,
+   "session_key": 9602,
+   "driver_number": 4,
+   "lap_number": 1,
+   "date_start": "2024-09-21T13:01:38.551000+00:00",
+   "duration_sector_1": null,
+   "duration_sector_2": 51.613,
+   "duration_sector_3": 33.558,
+   "i1_speed": 207,
+   "i2_speed": 189,
+   "is_pit_out_lap": true,
+   "lap_duration": null,
+   "segments_sector_1": [
+    2064,
+    2064,
+    2064,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049
+   ],
+   "segments_sector_2": [
+    2049,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049
+   ],
+   "segments_sector_3": [
+    2049,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049,
+    2049
+   ],
+   "st_speed": null
+  },
+  {
+   "meeting_key": 1246,
+   "session_key": 9602,
+   "driver_number": 4,
+   "lap_number": 2,
+   "date_start": "2024-09-21T13:03:50.318000+00:00",
+   "duration_sector_1": 26.863,
+   "duration_sector_2": 38.252,
+   "duration_sector_3": 25.609,
+   "i1_speed": 312,
+   "i2_speed": 279,
+   "is_pit_out_lap": false,
+   "lap_duration": 90.724,
+   "segments_sector_1": [
+    2051,
+    2049,
+    2049,
+    2049,
+    2049,
+    2051,
+    2051,
+    2051
+   ],
+   "segments_sector_2": [
+    2051,
+    2051,
+    2049,
+    2049,
+    2051,
+    2049,
+    2051,
+    2049
+   ],
+   "segments_sector_3": [
+    2049,
+    2051,
+    2051,
+    2051,
+    2049,
+    2049,
+    2051,
+    2048
+   ],
+   "st_speed": 305
+  }
+ ],
+ "stints": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "stint_number": 1,
+   "driver_number": 1,
+   "lap_start": 1,
+   "lap_end": 13,
+   "compound": "MEDIUM",
+   "tyre_age_at_start": 0
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "stint_number": 2,
+   "driver_number": 1,
+   "lap_start": 14,
+   "lap_end": 23,
+   "compound": "HARD",
+   "tyre_age_at_start": 0
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "stint_number": 3,
+   "driver_number": 1,
+   "lap_start": 24,
+   "lap_end": 56,
+   "compound": "HARD",
+   "tyre_age_at_start": 0
+  }
+ ],
+ "pit": [
+  {
+   "date": "2024-04-21T07:25:56.763000+00:00",
+   "session_key": 9673,
+   "pit_duration": 22.4,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "lap_number": 13,
+   "lane_duration": 22.4,
+   "stop_duration": null
+  },
+  {
+   "date": "2024-04-21T07:44:07.683000+00:00",
+   "session_key": 9673,
+   "pit_duration": 22.2,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "lap_number": 23,
+   "lane_duration": 22.2,
+   "stop_duration": null
+  }
+ ],
+ "session_result_quali": [
+  {
+   "position": 1,
+   "driver_number": 4,
+   "number_of_laps": 16,
+   "dnf": false,
+   "dns": false,
+   "dsq": false,
+   "duration": [
+    90.002,
+    90.007,
+    89.525
+   ],
+   "gap_to_leader": [
+    0.0,
+    0.367,
+    0.0
+   ],
+   "meeting_key": 1246,
+   "session_key": 9602
+  },
+  {
+   "position": 2,
+   "driver_number": 1,
+   "number_of_laps": 18,
+   "dnf": false,
+   "dns": false,
+   "dsq": false,
+   "duration": [
+    90.157,
+    89.68,
+    89.728
+   ],
+   "gap_to_leader": [
+    0.155,
+    0.04,
+    0.203
+   ],
+   "meeting_key": 1246,
+   "session_key": 9602
+  }
+ ],
+ "session_result_race": [
+  {
+   "position": 7,
+   "driver_number": 55,
+   "number_of_laps": 62,
+   "points": 6.0,
+   "dnf": false,
+   "dns": false,
+   "dsq": false,
+   "gap_to_leader": 96.039,
+   "duration": 6148.61,
+   "meeting_key": 1246,
+   "session_key": 9606
+  },
+  {
+   "position": 8,
+   "driver_number": 14,
+   "number_of_laps": 61,
+   "points": 4.0,
+   "dnf": false,
+   "dns": false,
+   "dsq": false,
+   "gap_to_leader": "+1 LAP",
+   "duration": null,
+   "meeting_key": 1246,
+   "session_key": 9606
+  }
+ ],
+ "intervals": [
+  {
+   "date": "2024-09-22T11:07:02.573000+00:00",
+   "session_key": 9606,
+   "interval": 0.0,
+   "meeting_key": 1246,
+   "gap_to_leader": 0.0,
+   "driver_number": 4
+  }
+ ],
+ "race_control_sc": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "date": "2024-04-21T07:39:16+00:00",
+   "driver_number": null,
+   "lap_number": 22,
+   "category": "SafetyCar",
+   "flag": null,
+   "scope": null,
+   "sector": null,
+   "qualifying_phase": null,
+   "message": "VIRTUAL SAFETY CAR DEPLOYED"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "date": "2024-04-21T07:43:21+00:00",
+   "driver_number": null,
+   "lap_number": 23,
+   "category": "SafetyCar",
+   "flag": null,
+   "scope": null,
+   "sector": null,
+   "qualifying_phase": null,
+   "message": "SAFETY CAR DEPLOYED"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "date": "2024-04-21T07:49:36+00:00",
+   "driver_number": null,
+   "lap_number": 26,
+   "category": "SafetyCar",
+   "flag": null,
+   "scope": null,
+   "sector": null,
+   "qualifying_phase": null,
+   "message": "SAFETY CAR IN THIS LAP"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "date": "2024-04-21T07:53:02+00:00",
+   "driver_number": null,
+   "lap_number": 27,
+   "category": "SafetyCar",
+   "flag": null,
+   "scope": null,
+   "sector": null,
+   "qualifying_phase": null,
+   "message": "SAFETY CAR DEPLOYED"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "date": "2024-04-21T08:00:59+00:00",
+   "driver_number": null,
+   "lap_number": 31,
+   "category": "SafetyCar",
+   "flag": null,
+   "scope": null,
+   "sector": null,
+   "qualifying_phase": null,
+   "message": "SAFETY CAR IN THIS LAP"
+  }
+ ],
+ "car_data": [
+  {
+   "date": "2024-04-21T07:10:00.119000+00:00",
+   "session_key": 9673,
+   "throttle": 100,
+   "brake": 0,
+   "rpm": 10892,
+   "speed": 306,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "n_gear": 8,
+   "drs": 0
+  },
+  {
+   "date": "2024-04-21T07:10:00.478000+00:00",
+   "session_key": 9673,
+   "throttle": 100,
+   "brake": 0,
+   "rpm": 10894,
+   "speed": 306,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "n_gear": 8,
+   "drs": 0
+  },
+  {
+   "date": "2024-04-21T07:10:00.758000+00:00",
+   "session_key": 9673,
+   "throttle": 100,
+   "brake": 0,
+   "rpm": 10887,
+   "speed": 306,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "n_gear": 8,
+   "drs": 0
+  },
+  {
+   "date": "2024-04-21T07:10:00.958000+00:00",
+   "session_key": 9673,
+   "throttle": 100,
+   "brake": 0,
+   "rpm": 10916,
+   "speed": 307,
+   "meeting_key": 1233,
+   "driver_number": 1,
+   "n_gear": 8,
+   "drs": 0
+  }
+ ],
+ "location": [
+  {
+   "date": "2024-04-21T07:10:00.182000+00:00",
+   "session_key": 9673,
+   "z": 142,
+   "x": 3466,
+   "driver_number": 1,
+   "meeting_key": 1233,
+   "y": -359
+  },
+  {
+   "date": "2024-04-21T07:10:00.382000+00:00",
+   "session_key": 9673,
+   "z": 142,
+   "x": 3603,
+   "driver_number": 1,
+   "meeting_key": 1233,
+   "y": -570
+  },
+  {
+   "date": "2024-04-21T07:10:00.682000+00:00",
+   "session_key": 9673,
+   "z": 142,
+   "x": 3694,
+   "driver_number": 1,
+   "meeting_key": 1233,
+   "y": -711
+  }
+ ],
+ "weather": [
+  {
+   "date": "2024-04-21T06:09:06.766000+00:00",
+   "session_key": 9673,
+   "wind_direction": 149,
+   "air_temperature": 19.1,
+   "humidity": 65.0,
+   "pressure": 1011.9,
+   "rainfall": 0,
+   "wind_speed": 1.0,
+   "track_temperature": 32.2,
+   "meeting_key": 1233
+  },
+  {
+   "date": "2024-04-21T06:10:06.770000+00:00",
+   "session_key": 9673,
+   "wind_direction": 151,
+   "air_temperature": 19.0,
+   "humidity": 63.0,
+   "pressure": 1011.9,
+   "rainfall": 0,
+   "wind_speed": 2.1,
+   "track_temperature": 32.1,
+   "meeting_key": 1233
+  }
+ ],
+ "position": [
+  {
+   "date": "2024-04-21T06:08:21.209000+00:00",
+   "session_key": 9673,
+   "position": 1,
+   "meeting_key": 1233,
+   "driver_number": 1
+  },
+  {
+   "date": "2024-04-21T07:25:47.619000+00:00",
+   "session_key": 9673,
+   "position": 2,
+   "meeting_key": 1233,
+   "driver_number": 1
+  }
+ ],
+ "overtakes": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "overtaking_driver_number": 31,
+   "overtaken_driver_number": 3,
+   "date": "2024-04-21T07:03:46.041000+00:00",
+   "position": 12
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "overtaking_driver_number": 23,
+   "overtaken_driver_number": 3,
+   "date": "2024-04-21T07:03:46.226000+00:00",
+   "position": 13
+  }
+ ],
+ "team_radio": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 22,
+   "date": "2024-04-21T06:22:27.275000+00:00",
+   "recording_url": "https://livetiming.formula1.com/static/2024/2024-04-21_Chinese_Grand_Prix/2024-04-21_Race/TeamRadio/YUKTSU01_22_20240421_072207.mp3"
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 2,
+   "date": "2024-04-21T06:23:00.309000+00:00",
+   "recording_url": "https://livetiming.formula1.com/static/2024/2024-04-21_Chinese_Grand_Prix/2024-04-21_Race/TeamRadio/LOGSAR01_2_20240421_072234.mp3"
+  }
+ ],
+ "championship_drivers": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 1,
+   "position_start": 1,
+   "position_current": 1,
+   "points_start": 85.0,
+   "points_current": 100.0
+  },
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "driver_number": 4,
+   "position_start": 5,
+   "position_current": 5,
+   "points_start": 40.0,
+   "points_current": 65.0
+  }
+ ],
+ "championship_teams": [
+  {
+   "meeting_key": 1233,
+   "session_key": 9673,
+   "team_name": "McLaren",
+   "position_start": 3,
+   "position_current": 3,
+   "points_start": 74.0,
+   "points_current": 103.0
+  }
+ ],
+ "starting_grid": [
+  {
+   "position": 1,
+   "driver_number": 4,
+   "lap_duration": 89.525,
+   "meeting_key": 1246,
+   "session_key": 9602
+  },
+  {
+   "position": 2,
+   "driver_number": 1,
+   "lap_duration": 89.728,
+   "meeting_key": 1246,
+   "session_key": 9602
+  }
+ ]
+}

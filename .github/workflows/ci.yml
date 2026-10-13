@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+env:
+  POETRY_VERSION: "2.2.1"
+
+jobs:
+  qualidade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Poetry
+        run: pipx install "poetry==${POETRY_VERSION}"
+
+      - name: Configurar Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+          cache: "poetry"
+
+      - name: Selecionar interpretador
+        run: poetry env use "${{ steps.python.outputs.python-path }}"
+
+      - name: Validar pyproject.toml e poetry.lock
+        run: poetry check --lock
+
+      - name: Instalar dependências
+        run: poetry install --no-interaction
+
+      - name: Ruff lint
+        run: poetry run ruff check .
+
+      - name: Ruff format
+        run: poetry run ruff format --check .
+
+      - name: Testes unitários e cobertura
+        run: >-
+          poetry run pytest tests/unit
+          --cov=f1
+          --cov-report=term-missing
+          --cov-fail-under=50
+
+      - name: Documentação
+        run: poetry run mkdocs build --strict
+
+  integracao:
+    # DuckDB em arquivo temporário e OpenF1 simulada; o teste contra a API real
+    # só roda com F1_TESTES_REDE=1 e fica fora da CI.
+    runs-on: ubuntu-latest
+    needs: qualidade
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Poetry
+        run: pipx install "poetry==${POETRY_VERSION}"
+
+      - name: Configurar Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+          cache: "poetry"
+
+      - name: Selecionar interpretador
+        run: poetry env use "${{ steps.python.outputs.python-path }}"
+
+      - name: Instalar dependências
+        run: poetry install --no-interaction
+
+      - name: Testes de integração
+        run: poetry run pytest tests/integration -m integration
